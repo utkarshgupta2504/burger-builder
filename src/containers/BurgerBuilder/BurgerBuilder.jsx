@@ -30,8 +30,6 @@ class BurgerBuilder extends Component {
 			.map((igKey) => ingredients[igKey])
 			.reduce((sum, el) => sum + el, 0);
 
-		console.log(sum);
-
 		this.setState({ canOrder: sum > 0 });
 	};
 
